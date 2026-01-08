@@ -1,0 +1,93 @@
+name: Change request template
+description: Initiate a change request
+title: "[CR]: "
+labels: ["cr", "change request"]
+projects: ["headset-ecad", "mechanical-changes", "headset-firmware"]
+assignees: 
+  -
+body:
+  - type: markdown
+    attributes:
+      value: | 
+        ## Change request template
+        The design change request process in GitHub is described under **"6. Design changes"** in [FL 05-01 SOP Product Development](https://docs.google.com/document/d/1l700k05YQ0iaAnnFWgYVmkVAsNKuyniw1de_clHbfkk/edit?tab=t.0)
+  - type: textarea
+    id: cr-purpose
+    attributes:
+      label: Change request purpose
+      description: Describe the purpose/motivation as to why the change is needed
+      placeholder: Explain the reason for the change request...
+    validations:
+      required: true
+  - type: textarea
+    id: cr-description
+    attributes:
+      label: Change request details
+      description: Describe the change
+      placeholder: Describe the change in detail as well as other areas it might affect...
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation plan
+      description: List the actions to be implemented
+      placeholder: Break down the change request into actions...
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Review of change proposed
+      description: Has the change been reviewed by responsbile party (QM, CTO, CFO, CLINICAL)?
+      placeholder: List who has authorized the change request...
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Verification/Validation strategy
+      description: Describe the verification and (if applicable) validation strategies and results.
+      placeholder: What will be done to verify/validate the change?
+    validations:
+      required: true
+  - type: textarea
+    id: cr-requirement
+    attributes:
+      label: Impact assessment
+      description: |
+        Asses the impact of the change request in regards to
+        - QMS document updates
+        - Record retention requirements
+        - Process change
+        - ISO 14971 risk control impact
+        - Supplier impact
+        - Training & competency changes
+        - IT system changes
+        - GDPR/DPIA impact
+        - PMS impact
+        - Internal audit/CAPA impact
+      placeholder: If applicable, list the area & how it's affected by this change request...
+    validations:
+      required: true
+  - type: textarea
+    id: cr-notified-bodies
+    attributes:
+      label: Regulatory impact checklist
+      description: |
+        Assess the impact of the change request in regards to notificaiton requirements for:
+        - EU MDR
+        - UK MDR, 
+        - FDA QMSR
+        - TGA 
+      placeholder: Do any notified bodies need to be notified?
+    validations:
+      required: true
+  - type: textarea
+    id: change-request
+    attributes:
+      label: Post-implementation review
+      description: Who's the reviewer and has the implementation been effective / not effective?
+      placeholder: How will you know the implementation has been effective and who will check it?
+    validations:
+      required: true
