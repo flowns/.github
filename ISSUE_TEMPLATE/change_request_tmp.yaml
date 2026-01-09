@@ -2,7 +2,7 @@ name: Change request template
 description: Initiate a change request
 title: "[CR]: "
 labels: ["cr", "change request"]
-projects: ["headset-ecad", "mechanical-changes", "headset-firmware"]
+projects: ["Flow HW changes"]
 assignees: 
   -
 body:
